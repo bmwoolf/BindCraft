@@ -56,14 +56,14 @@ generate_filter_pass_csv(failure_csv, args.filters)
 ####################################
 ####################################
 ####################################
-### initialise PyRosetta
+### initialize PyRosetta
 pr.init(f'-ignore_unrecognized_res -ignore_zero_occupancy -mute all -holes:dalphaball {advanced_settings["dalphaball_path"]} -corrections::beta_nov16 true -relax:default_repeats 1')
 print(f"Running binder design for target {settings_file}")
 print(f"Design settings used: {advanced_file}")
 print(f"Filtering designs based on {filters_file}")
 
 ####################################
-# initialise counters
+# initialize counters
 script_start_time = time.time()
 trajectory_n = 1
 accepted_designs = 0
